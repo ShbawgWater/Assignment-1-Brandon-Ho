@@ -1,0 +1,160 @@
+/* Globals */
+body {
+    background-color: #0a0e1a; 
+    color: #e2e8f0;            
+    font-size: 14px;
+    min-height: 100vh;
+}
+
+/* Nav */
+header {
+    background-color: #111827; 
+    border-bottom: 1px solid #1f2d45;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-title {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #c9a84c; 
+    text-decoration: none;
+}
+
+.site-title span { 
+    color: #e2e8f0;
+}
+
+nav { 
+    display: flex; 
+    gap: 0.5rem; 
+}
+
+nav a {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+nav a:hover, nav a.active {
+    color: #c9a84c; 
+}
+
+/*Layout */
+.page-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: calc(100vh - 64px);
+}
+
+.sidebar {
+    background-color: #111827;
+    border-right: 1px solid #1f2d45; 
+    padding: 1.5rem 0;
+}
+
+.sidebar-list li a {
+    display: block;
+    padding: 0.6rem 1.5rem;
+    color: #e2e8f0; 
+    text-decoration: none;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-list li a:hover, .sidebar-list li a.active {
+    background-color: #1a2235; 
+    border-left-color: #c9a84c; 
+    color: #c9a84c; 
+}
+
+/*  Main Stuff  */
+
+.info-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.info-row .key {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #64748b;
+}
+
+main { 
+    padding: 2rem; 
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: #1a2235;
+    border: 1px solid #1f2d45; 
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.stat-card .value {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #c9a84c; 
+}
+
+/* Teables */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #1f2d45; 
+    color: #64748b; 
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.data-table td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #1f2d45;
+}
+
+/* About */
+.about-wrap {
+    max-width: 760px;
+    margin: 3rem auto;
+    
+    background: #1a2235;
+    border: 1px solid #1f2d45; 
+    border-radius: 8px;
+    padding: 1.25rem;
+    
+}
+
+.about-section h3 {
+    color: #c9a84c; 
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.about-section p {
+    color: #e2e8f0;
+}
