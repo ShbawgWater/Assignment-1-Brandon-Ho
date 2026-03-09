@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockView &mdash; About</title>
+    <title>StockViewer 10,000 About</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
 
 <!--who what where when how aka about -->
 <div class="about-wrap">
-    <h1>About StockView</h1>
+    <h1>About StockViewer 10,000</h1>
     <p class="tagline">Assignment #1 COMP 3512   Mount Royal University</p>
 
     <div class="about-section">

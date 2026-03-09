@@ -56,14 +56,14 @@ if (isset($_GET['symbol'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockView Companies</title>
+    <title>StockViewer 10,000 Companies</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-    <a href="index.php" class="site-title">Stock<span>View</span></a>
+    <a href="index.php" class="site-title">Stock<span>Viewer 10,000</span></a>
     <nav>
         <a href="index.php">Home</a>
         <a href="companies.php" class="active">Companies</a>
@@ -178,10 +178,10 @@ if (isset($_GET['symbol'])) {
                         <tr>
                             <td><?php echo htmlspecialchars($row['date']); ?></td>
                             <td><?php echo number_format($row['volume']); ?></td>
-                            <td class="mono">$<?php echo number_format($row['open'], 4); ?></td>
-                            <td class="mono">$<?php echo number_format($row['close'], 4); ?></td>
-                            <td class="mono">$<?php echo number_format($row['high'], 4); ?></td>
-                            <td class="mono">$<?php echo number_format($row['low'], 4); ?></td>
+                            <td>$<?php echo number_format($row['open'], 4); ?></td>
+                            <td>$<?php echo number_format($row['close'], 4); ?></td>
+                            <td>$<?php echo number_format($row['high'], 4); ?></td>
+                            <td>$<?php echo number_format($row['low'], 4); ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

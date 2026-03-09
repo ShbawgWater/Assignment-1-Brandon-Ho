@@ -46,6 +46,7 @@ if (isset($_GET['userId'])) {
         $total_value = 0;
         $total_companies = count($portfolio);
         $total_shares = 0;
+        
         foreach ($portfolio as $row) {
             $total_value += $row['stockValue'];
             $total_shares += $row['amount'];
@@ -64,7 +65,7 @@ if (isset($_GET['userId'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockView Customers</title>
+    <title>StockViewer 10,000 Customers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -147,8 +148,8 @@ if (isset($_GET['userId'])) {
                             <td><span class="symbol-badge"><?php echo htmlspecialchars($row['symbol']); ?></span></td>
                             <td><?php echo htmlspecialchars($row['name']); ?></td>
                             <td><?php echo number_format($row['amount']); ?></td>
-                            <td class="mono">$<?php echo number_format($row['close'], 4); ?></td>
-                            <td class="mono">$<?php echo number_format($row['stockValue'], 2); ?></td>
+                            <td>$<?php echo number_format($row['close'], 4); ?></td>
+                            <td>$<?php echo number_format($row['stockValue'], 2); ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
