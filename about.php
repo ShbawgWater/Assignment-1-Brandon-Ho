@@ -14,7 +14,7 @@
 
 <!--Header  -->
 <header>
-    <a href="index.php" class="site-title">Stock<span>View</span></a>
+    <a href="index.php" class="site-title">Stock<span>Viewer 10,000</span></a>
     <nav>
         <a href="index.php">Home</a>
         <a href="companies.php">Companies</a>
